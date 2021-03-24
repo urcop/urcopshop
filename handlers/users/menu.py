@@ -43,6 +43,8 @@ async def cancel(call: CallbackQuery):
 @dp.message_handler(text='большие сливы'.capitalize())
 async def get_big_sliv(message: types.Message):
     await message.answer('Вы выбрали категорию большие сливы')
+    await message.answer_photo(
+        'https://sun9-39.userapi.com/impg/P2xu9611ddPsDx4gK5C8d8UhP2dR_qmpiu__VQ/TGYfa1nlpS8.jpg?size=850x482&quality=96&sign=37cabfe8a2264b2020060b4ddab3b1fc&type=album')
 
 
 @dp.message_handler(text='SMM')
